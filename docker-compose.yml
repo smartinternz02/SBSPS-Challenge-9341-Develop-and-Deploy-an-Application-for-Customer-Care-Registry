@@ -1,0 +1,50 @@
+version: "3.2"
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=""
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=""
+      - MYSQL_DATABASE=cust_care
+    container_name: nishi-mysql-app
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.7
+    depends_on:
+      - mysql
+    ports:
+      - "30002:80"
+    environment:
+      - PMA_HOST=nishi-mysql-app
+      - PMA_PORT= 3306
+    volumes:
+      - /sessions
+    container_name: nishi-phpmyadmin-app
+
+  nodejs:
+    build:
+      dockerfile: Dockerfile
+      context: "./server"
+    image: nodejs-mysql-app
+    depends_on:
+      - mysql
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_USER=root
+      - MYSQL_PASS="root"
+      - MYSQL_DB=cust_care
+    volumes:
+      - ./www/:/var/www/html/
+    ports:
+      - "30001:8005"
+    container_name: nishi-nodejs-app
+  cust_care:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    build:
+      dockerfile: Dockerfile
+      context: "./cust_care"
+    volumes:
+      - /app/node_modules
+      - ./cust_care:/app
