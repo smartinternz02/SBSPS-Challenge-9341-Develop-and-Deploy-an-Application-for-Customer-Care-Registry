@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,300&display=swap");
+
+.Contact {
+  background: url("./Contact_bg.png");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 675px;
+  background-repeat: no-repeat;
+  opacity: 1;
+  overflow: hidden;
+  color: white;
+}
+.Contact .CMe {
+  position: relative;
+  left: 550px;
+  bottom: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  width: 500px;
+}
+.Contact-1 h1 {
+  font-size: 35px;
+  width: 100%;
+}
+.Contact-1 .coninfo {
+  color: rgb(164, 158, 158);
+}
+.Contact-1 {
+  margin-top: 80px;
+  position: relative;
+  right: 300px;
+  padding: 30px;
+}
+.phone {
+  width: 100%;
+}
+.phone h1 {
+  position: relative;
+}
+.gmail {
+  position: relative;
+  bottom: 45px;
+}
+.mail {
+  height: 40px;
+  width: 100%;
+  position: relative;
+  top: 30px;
+  right: 300px;
+}
+.Contact-2 {
+  margin-top: 90px;
+
+  position: relative;
+  right: 100px;
+  padding: 30px;
+}
+.Contact-2 h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.Contact-2 span {
+  color: #3187e4;
+}
+.Contact-2 form {
+  position: relative;
+  top: 50px;
+}
+.Contact-2 input {
+  padding: 20px;
+  background: transparent;
+  width: 400px;
+  border-top: 1px solid transparent;
+  border-left: 1px transparent solid;
+  border-bottom: 1px white solid;
+  border-right: 1px solid transparent;
+  color: white;
+}
+.Contact-2 textarea {
+  background: transparent;
+  width: 400px;
+  padding: 20px;
+  height: 130px;
+  border-top: 1px solid transparent;
+  border-left: 1px transparent solid;
+  border-bottom: 1px white solid;
+  border-right: 1px solid transparent;
+  color: white;
+}
+.Contact-2 button {
+  background: #3187e4;
+  color: white;
+  padding: 5px;
+  width: 130px;
+  height: 40px;
+  border: none;
+}
+.Contact-2 button:hover {
+  background: transparent;
+  transition: ease 0.5s all;
+  border: 1px white solid;
+}
+
+@media screen and (max-width: 780px) {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,300&display=swap");
+
+  .Contact {
+    background: url("./Contact_bg.png");
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 675px;
+    background-repeat: no-repeat;
+    opacity: 1;
+    overflow: hidden;
+  }
+  .Contact .CMe {
+    position: relative;
+    left: 200px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    width: auto;
+  }
+  .Contact-1 h1 {
+    font-size: 25px;
+    width: 100%;
+  }
+  .Contact-1 .coninfo {
+    color: rgb(164, 158, 158);
+  }
+  .Contact-1 {
+    display: none;
+  }
+  .gmail {
+    position: relative;
+    bottom: 45px;
+    left: 50px;
+  }
+  .mail {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    right: 260px;
+  }
+  .Contact-2 {
+    margin: 90px;
+    position: relative;
+    right: 100px;
+    padding: 30px;
+  }
+  .Contact-2 h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    width: auto;
+  }
+  .Contact-2 span {
+    color: #dc143c;
+  }
+  .Contact-2 form {
+    position: relative;
+    top: 50px;
+  }
+  .Contact-2 input {
+    padding: 20px;
+    background: transparent;
+    width: 300px;
+    border-top: 1px solid transparent;
+    border-left: 1px transparent solid;
+    border-bottom: 1px white solid;
+    border-right: 1px solid transparent;
+  }
+  .Contact-2 textarea {
+    background: transparent;
+    width: 300px;
+    padding: 20px;
+    height: 130px;
+    border-top: 1px solid transparent;
+    border-left: 1px transparent solid;
+    border-bottom: 1px white solid;
+    border-right: 1px solid transparent;
+  }
+  .Contact-2 button {
+    background: #3187e4;
+    color: white;
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border: none;
+  }
+  .Contact-2 button:hover {
+    background: transparent;
+    transition: ease 0.5s all;
+    border: 1px white solid;
+  }
+}

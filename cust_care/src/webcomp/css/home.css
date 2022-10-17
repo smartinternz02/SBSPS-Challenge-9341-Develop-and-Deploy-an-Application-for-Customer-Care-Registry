@@ -1,0 +1,487 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;1,100;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: #161616;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* background-color: #161616; */
+  color: #fff;
+  z-index: 1;
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 1px solid rgb(129, 129, 129);
+}
+.nav-links a {
+  color: #fff;
+}
+.logo {
+  font-size: 30px;
+}
+.menu {
+  display: flex;
+  gap: 1em;
+}
+.menu li:hover {
+  background-color: #3187e4;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  height: 40px;
+  text-decoration: none;
+}
+.menu li {
+  padding: 5px 14px;
+  list-style: none;
+  text-decoration: none;
+}
+.menu li a:hover {
+  color: white;
+}
+.menu li a {
+  text-decoration: none !important;
+}
+.services {
+  position: relative;
+}
+
+.cont {
+  background-color: #161616;
+}
+.home-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: -90px;
+}
+.home-side-hdg {
+  margin-top: 60px;
+  margin-left: -90px;
+}
+.dropdown li + li {
+  margin-top: 10px;
+}
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+.dropdown li:hover {
+  background-color: #161616;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+.home {
+  margin: 150px 0px;
+  color: white;
+}
+.home h1 {
+  font-size: 4.5rem;
+  margin-left: 150px;
+}
+
+/* The dropdown container */
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 30px;
+  color: white;
+  padding: 7px 7px;
+  background-color: #1565c0;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .links {
+  float: none;
+  color: black;
+  padding: 5px 5px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.home-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home button {
+  width: 130px;
+  padding: 10px 5px;
+  border-radius: 0em;
+  background-color: #3187e4;
+  border-style: none;
+  font-weight: lighter;
+  position: relative;
+  top: 20px;
+  color: white;
+}
+.home button:hover {
+  background-color: transparent;
+  border: white 1px solid;
+  transition: ease-in 0.4s;
+}
+.inno {
+  text-align: center;
+}
+.inno h3 {
+  font-size: 25px;
+  color: #3187e4;
+}
+.inno h1 {
+  font-size: 40px;
+  color: #3187e4;
+}
+.inno p {
+  text-align: center;
+  margin: 0px 170px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+.blocks i {
+  color: white;
+}
+.blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 40px;
+}
+.block1,
+.block2,
+.block3 {
+  margin: 7px;
+  width: 350px;
+  height: 420px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+svg {
+  position: relative;
+  left: 130px;
+  top: 30px;
+}
+.block1 h2,
+.block2 h2,
+.block3 h2 {
+  position: relative;
+  top: 35px;
+  margin-left: 60px;
+}
+.block1 p,
+.block2 p,
+.block3 p {
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+.block1:hover,
+.block2:hover,
+.block3:hover {
+  background: #3187e4;
+  transition: ease 0.5s all;
+  transform: scale(1.03);
+  box-shadow: 16px 12px 6px rgba(0, 0, 0, 0.2),
+    12px 8px 12px rgba(0, 0, 0, 0.14), 4px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.line {
+  background-color: #3187e4;
+  border: 1px #3187e4 solid;
+  width: 100px;
+  position: relative;
+  left: 100px;
+}
+.test h3 {
+  color: white;
+  position: relative;
+  left: 0px;
+}
+.test h3 {
+  margin-left: 230px;
+  position: relative;
+  bottom: 13px;
+}
+.main-test h1 {
+  font-size: 40px;
+  color: white;
+  margin-left: 100px;
+  font-weight: bolder;
+}
+.mainpara {
+  margin: 0px 170px;
+  font-weight: lighter;
+  font-size: 15px;
+  color: white;
+  position: relative;
+  right: 70px;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 60px 110px;
+  gap: 10px;
+}
+.review1,
+.review2 {
+  border: 2px #3187e4 solid;
+  background: #da4453; /* fallback for old browsers */
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  min-height: 350px;
+  width: 550px;
+  border-radius: 2ch;
+}
+.review1 h5,
+h6 {
+  color: black;
+}
+.review2 h5,
+h6 {
+  color: black;
+}
+.review1 p,
+.review2 p {
+  color: black;
+  padding: 20px;
+}
+.review-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+.review-heading h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  padding: 5px;
+  font-size: larger;
+}
+
+.WebIcon,
+.AppIcon,
+.LapIcon,
+.CyberIcon {
+  width: 20%;
+  height: 70px;
+  position: relative;
+  right: 100px;
+}
+
+.changeAppIcon,
+.changeWebIcon,
+.changeCyberIcon,
+.changeLapIcon {
+  width: 20%;
+  position: relative;
+}
+
+@media (max-width: 780px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: #161616;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px 0;
+  }
+  svg {
+    position: relative;
+    left: 100px;
+    top: 30px;
+  }
+  .block1 h2,
+  .block2 h2,
+  .block3 h2 {
+    position: relative;
+    top: 30px;
+    margin-left: 60px;
+  }
+  .blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    margin-left: 0px;
+    align-items: center;
+    margin-top: -50px;
+  }
+  .block1,
+  .block2,
+  .block3 {
+    width: 300px;
+    height: 420px;
+    position: relative;
+    right: 32px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: -4px;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #161616;
+    transition: 0.3s ease;
+  }
+  .main-test h1 {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .mainpara {
+    margin-left: 100px;
+    margin-right: 0px;
+    font-size: 100px;
+  }
+  .reviews {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .home h1 {
+    margin-bottom: -50px;
+  }
+  .home h4 {
+    height: 200px;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .home-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .home button {
+    width: 130px;
+    padding: 10px 5px;
+    border-radius: 0em;
+    background-color: #3187e4;
+    border-style: none;
+    font-weight: lighter;
+    position: relative;
+    top: -50px;
+    left: 100px;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+  .dropdown li:hover {
+    background-color: #161616;
+  }
+  .home h1 {
+    position: relative;
+    top: -100px;
+  }
+  .home h4 {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px;
+    position: relative;
+  }
+  .inno h3 {
+    position: relative;
+    top: -220px;
+  }
+  .WebIcon,
+  .AppIcon,
+  .LapIcon,
+  .CyberIcon {
+    width: 20%;
+    height: 70px;
+    position: relative;
+    right: 100px;
+  }
+
+  .changeAppIcon,
+  .changeWebIcon,
+  .changeCyberIcon,
+  .changeLapIcon {
+    width: 20%;
+    position: relative;
+  }
+  .inno h1 {
+    position: relative;
+    top: -220px;
+  }
+  .inno p {
+    text-align: center;
+    width: 100%;
+    margin: 0px 0px;
+    position: relative;
+    top: -200px;
+  }
+}
